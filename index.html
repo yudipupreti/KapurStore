@@ -1,70 +1,368 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Elibom | Mobile Store</title>
-	<link rel="stylesheet" href="Style.css">
-	<style>
-		h1 {
-			color: cyan;
-			font-family: verdana;
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kapur Store</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <h2>Kapur Store</h2>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#AsusRog">AsusRog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Ipnone">Ipnone</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Lenovo">Lenovo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
 
-		}
+    <!-- this is carosell section -->
 
+    <section class="mt-4 py-3">
+      <div class="container">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-md-7 p-5">
+                  <h1>AsusRog For Gaming</h1>
+                  <p>
+                    This is an execellent mobile for playing games.
+                  </p>
+                  <h2 class="price">$1200</h2>
+                  <a class="btn btn-buy" href="#">Buy Now</a>
+                </div>
+                <div class="col-md-5 p-5">
+                  <img
+                    src="./images/banner-images/AsusRog.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-8 p-5">
+                  <h1>Iphone For Personal use</h1>
+                  <p>
+                    This is an execellent mobile for Personal use.
+                  </p>
+                  <h2 class="price">$600</h2>
+                  <a class="btn btn-buy" href="#">Buy Now</a>
+                </div>
+                <div class="col-md-4 p-4">
+                  <img
+                    src="./images/banner-images/Ipnone.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-8 p-5">
+                  <h1>Lenovo for Official use</h1>
+                  <p>
+                    This is an execellent mobile for Official use.
+                  </p>
+                  <h2 class="price">$300</h2>
+                  <a class="btn btn-buy" href="#">Buy Now</a>
+                </div>
+                <div class="col-md-4 p-4">
+                  <img
+                    src="./images/banner-images/Lenovo.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	</style>
+    <!-- this is category section -->
+    <section id="category">
+      <div class="container overflow-hidden my-5">
+        <h3>Categories</h3>
+        <div class="row gx-5 mt-4">
+          <div class="col">
+            <div
+              class="p-3 border cat1 d-flex text-white align-items-center justify-content-between"
+            >
+              <h2>AsusRog</h2>
+              <img src="./images/categories/AsusRog.png" alt="watch" />
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-3 border cat2 d-flex text-white align-items-center justify-content-between"
+            >
+              <h2>Ipnone</h2>
+              <img src="./images/categories/Ipnone.png" alt="bag" />
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-3 border cat3 d-flex text-white align-items-center justify-content-between"
+            >
+              <h2>Lenovo</h2>
+              <img src="./images/categories/Lenovo.png" alt="shoes" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</head>
-<body bgcolor="grey">
+    <!-- this is AsusRog section -->
 
+    <section id="AsusRog">
+      <div class="container my-5">
+        <h3>AsusRog</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-1">
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/AsusRog.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">AsusRog</h5>
+                <p class="card-text">
+                    This is an execellent mobile for playing games.
+                </p>
+                <h3 class="fw-bolder">$120</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/Ipnone.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Iphone</h5>
+                <p class="card-text">
+                    This is an execellent mobile for Personal use.
+                </p>
+                <h3 class="fw-bolder">$220</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/Lenovo.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lenovo</h5>
+                <p class="card-text">
+                    This is an execellent mobile for Official use
+                </p>
+                <h3 class="fw-bolder">$320</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<h1>Welcome to the Elibom.</h1>
-	<div class="head">
+    <!-- this is Ipnone section -->
+    <section id="Ipnone">
+      <div class="container my-5">
+        <h3>Ipnone</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-1">
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/AsusRog.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">AsusRog</h5>
+                <p class="card-text">
+                    This is an execellent mobile for playing games.
+                </p>
+                <h3 class="fw-bolder">$120</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/Ipnone.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ipnone</h5>
+                <p class="card-text">
+                    This is an execellent mobile for Personal use.
+                </p>
+                <h3 class="fw-bolder">$220</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/Lenovo.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lenovo</h5>
+                <p class="card-text">
+                    This is an execellent mobile for Official use
+                </p>
+                <h3 class="fw-bolder">$320</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- this is Lenovo section -->
+    <section id="Lenovo">
+      <div class="container my-5">
+        <h3>Lenovo</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-1">
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/AsusRog.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">AsusRog</h5>
+                <p class="card-text">
+                    This is an execellent mobile for playing games.
+                </p>
+                <h3 class="fw-bolder">$120</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/Ipnone.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Iphone</h5>
+                <p class="card-text">
+                    This is an execellent mobile for Personal use.
+                </p>
+                <h3 class="fw-bolder">$220</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="./images/categories/Lenovo.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lenovo</h5>
+                <p class="card-text">
+                    This is an execellent mobile for Official use
+                </p>
+                <h3 class="fw-bolder">$320</h3>
+                <a class="btn btn-buy" href="#">Buy Now >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<div class="container">
-		<div class="navbar">
-		
-		<nav>
-			<ul>
-				<li><a href="">		Home</a></li>
-				<li><a href="Product.html">Products</a></li>
-				<li><a href="Blog.html">Blog</a></li>
-				<li><a href="">		Research</a></li>
-				<li><a href="">		Contact</a></li>
+    <section id="subscribe" style="height: 300px;" class="d-flex container justify-content-center align-items-center">
+      <div class="py-5 my-3">
+          <h2>LET'S STAY IN TOUCH</h2>
+          <p>Get updates on sales, special and more</p>
+          <input type="text" placeholder="Enter your email" />
+          <a class="btn btn-buy" href="#">SUBMIT</a>
+      </div>
+    </section>
+    <footer>
+      <p class="text-center mt-5">© Kapur Complex, Hetauda 2022, all right reserved.</p>
+    </footer>
 
-			</ul>
-		</nav>
-
-	</div>
-	
-	</div>
-	<div class="row">
-		<div class="col-2">
-			<h2>Step forward<br>	Towards change</h2>
-			
-		</div>
-		<div class="col-2">
-			<img src="C:\Users\DELL\Desktop\Development\Images\images.jpg" width="40%" height="100%">
-			<a href=""		class="btn"><b>Explore</b></a>
-			
-		</div>
-		
-	</div>
-</div>
-<div class="catagories">
-	<div class="row">
-		<div class="col-3">
-			<img src="C:\Users\DELL\Desktop\Development\Images\images (2).jpg">
-		</div><div class="col-3">
-			<img src="C:\Users\DELL\Desktop\Development\Images\images (3).jpg">
-		</div><div class="col-3">
-			<img src="C:\Users\DELL\Desktop\Development\Images\images (4).jpg">
-		</div>
-
-		
-	</div>	
-	
-</div>
-
-</body</html>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
