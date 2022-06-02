@@ -1,122 +1,68 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: content-box;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-.navbar{
-	display: flex;
-	align-items: center;
-	padding: 20px;
-
-
+.nav-item a{
+ color: Black !important;
 }
-nav{
-	flex: 1;
-	text-align: right;
-
-
+.nav-item a:hover{
+    color: #FF3187 !important;
 }
-nav ul{
-	display:inline-block;
-	list-style-type: none;
-
-
+.carousel-item{
+    background-color: #FDEAE8;
 }
-nav ul li{
-	display: inline-block;
-	margin-right: 20px
+.carousel-item img{
+    width: 100%;
 }
-a{
-	text-decoration: none;
-	color: lightyellow ;
-	transition: background 0.5s;
+h1,h2,h3,h5, .price{
+    font-weight: 600;
 }
-a:hover{
-	background: #5634;
+p{
+    text-align: justify;
 }
-.container{
-	max-width: 1300px
-	margin: auto;
-	padding-left: 50px;
-	padding-right: 50px;
+.price{
+    color: #FF3187;
 }
-.row{
-	display: flex;
-	align-items: left;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.btn-buy{
+    background-color: #FF3187;
+    color: white;
+    border-radius: 5px;
 }
-.col-2{
-	flex-basis: 100%;
-	min-width: 60px;
-
+#category img{
+    height: 100px;
 }
-.col-2 img{
-	height: 100%
-	width: 500%
-	padding: 50px;
-	,margin: auto;
+.cat1, .cat2, .cat3{
+    border-radius: 10px;
 }
-.col-2 h2{
-	font-stretch: 25px;
-	font-size: 50px;
-	line-height: 60px;
-	color:lightyellow; 
-	margin: 25px ;
+.cat1{
+    background-color: #FFA603;
 }
-
-.btn{
-	display: ruby-base;
-	background: #40E0D0;
-	color: lightyellow;
-	padding: 8px 0px;
-	margin: 10px  ;
-	border-radius: : 10px ;
-	transition: background 0.5s;
-
+.cat2{
+    background-color: #DC70D7;
 }
-.head{
-	background: radial-gradient(white,grey);
+.cat3{
+    background-color: #0200FF;
 }
-.head .row{
-
-	margin-top: 70px;
+.card{
+    border: none;
+    border-radius: 5px;
 }
-.btn:hover{
-	background: #5634;
-
+#shoes .card img{
+    width: 70% !important;
 }
-.catagories{
-	margin: 70px 0; 
+.card img{
+    width: 70%;
 }
-.col-3{
-	flex-basis: 25%;
-	min-width:250px;
-	margin-bottom: 300px;
-
+#subscribe{
+    background-color: #FDEAE8;
 }
-.col-3 img{
-	width: 100%;
-
+#subscribe a{
+    padding: 3px 10px;
 }
-.small-container{
-	max-width: 1080px;
-	margin:auto;
-	padding-right:250px;
-	padding-left:250px;
-
-}
-.col-4{
-	padding:10px;
-	min-width: 200px;
-	margin-bottom: 5px;
-	transition: transform 0.5s;
-
-}
-.col-4 img{
-	width: 100%;
-}
-.col-4:hover{
-	transform: translateY(-5px);
+@media(max-width:768px){
+    .cat1, .cat2, .cat3{
+        margin-top: 10px;
+    }
 }
